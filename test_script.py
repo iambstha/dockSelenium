@@ -7,8 +7,7 @@ d.driver.get(getUrl)
 # Run Function
 def run():
     # Your script goes here
-    title = d.driver.title
-    print(title)
+    print("Hello world!")
 
 
 i = d.Driver(d.driver)

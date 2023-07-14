@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 
 # Set options
 options = ChromeOptions()
-options.add_argument("--headless")
+options.headless = True
 
 #driver settings
 driver = webdriver.Chrome(options=options)
