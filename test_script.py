@@ -1,15 +1,15 @@
-import dock
+import dock.dock as d
 
 # Url is dynamically input in the terminal
 getUrl = input("Enter the URL: ")
-dock.driver.get(getUrl)
+d.driver.get(getUrl)
 
 # Run Function
 def run():
     # Your script goes here
-    title = dock.driver.title
+    title = d.driver.title
     print(title)
 
 
-d = dock.Driver(dock.driver)
-d.rerun(3, lambda: run())
+i = d.Driver(d.driver)
+i.rerun(3, lambda: run())
