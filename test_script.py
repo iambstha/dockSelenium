@@ -26,6 +26,9 @@ test = d.Driver(d.driver)
 # Gets the title of the webpage
 # test.getTitle()
 
+# Setting the wait time
+# test.wait(5)
+
 
 # Check for the availability of the element in the webpage
 # test.checkElement("CLASS_NAME","form-control")

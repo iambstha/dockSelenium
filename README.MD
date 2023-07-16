@@ -10,3 +10,15 @@ This is a startup directory to write the selenium scripts in python along with s
 3. Always bind any selenium script with `d` while writing test scripts. For example `driver.find_element()` should be written as `d.driver.find_element()`
 4. Customize the webdriver wait-time as per your project requirements.
 5. Customize the amount of retest by modifying the integer value in the `rerun` call.
+
+
+## Features
+
+1. Setting a custom wait time for the webdriver
+2. Settting the number of times a test should be performed `test.wait(5)`
+3. Getting the title of the page `test.getTitle()`
+4. Checking whether the button or input type submit is clickable `test.checkClick("button")` or `test.checkClick("input")`
+5. Checking the presence of an element in a webpage `test.checkElement("CLASS_NAME","container")`
+
+
+<mark> Note that, this project is still experimental and hence does not support the full render wait time for any test actions. </mark>
