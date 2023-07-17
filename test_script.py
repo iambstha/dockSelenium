@@ -1,5 +1,6 @@
 import dock.dock as d
 
+
 # Url is dynamically input in the terminal
 getUrl = input("Enter the URL: ")
 d.driver.get(getUrl)
@@ -20,7 +21,7 @@ test = d.Driver(d.driver)
 ### Use Cases Examples ###
 
 # Rerunnning a test for multiple times
-# test.rerun(3, lambda: run())
+test.rerun(3, lambda: run())
 
 
 # Gets the title of the webpage
